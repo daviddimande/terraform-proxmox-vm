@@ -197,7 +197,7 @@ variable "password" {
   sensitive   = true
 
 }
-
+/*
 variable "ip" {
   type        = string
   description = "container ip address"
@@ -207,6 +207,7 @@ variable "gw" {
   type        = string
   description = "container gateway address"
 }
+*/
 
 variable "net_name" {
   type        = string

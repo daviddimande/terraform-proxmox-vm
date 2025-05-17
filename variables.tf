@@ -27,7 +27,7 @@ variable "target_node" {
   description = "proxmox node where deployment will be done"
 }
 ## ===================== VM variables ===================
-variable "count" {
+variable "counter" {
   type        = number
   default     = 2
   description = "number of resources to be created"

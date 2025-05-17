@@ -1,6 +1,6 @@
-resource "proxmox_vm_qemu" "virtual_machine"{
-  count       = 2
-  name        = "node-0${count.index + 1}"
+resource "proxmox_vm_qemu" "virtual_machine" {
+  count       = var.count
+  name        = "${name}${count.index + 1}"
   target_node = var.target_node
   vmid        = var.vmid
   desc        = "kubernetes node-${count.index + 1}"

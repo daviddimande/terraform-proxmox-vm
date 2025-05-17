@@ -27,7 +27,11 @@ variable "target_node" {
   description = "proxmox node where deployment will be done"
 }
 ## ===================== VM variables ===================
-
+variable "count" {
+  type        = number
+  default     = 2
+  description = "number of resources to be created"
+}
 variable "vmid" {
   type        = number
   default     = 0
@@ -158,4 +162,10 @@ variable "link_down" {
   type        = bool
   default     = false
   description = "define network interface status"
+}
+
+variable "name" {
+  type        = string
+  default     = "node-0"
+  description = "node nome to be associated with resource"
 }

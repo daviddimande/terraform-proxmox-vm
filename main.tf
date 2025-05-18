@@ -11,7 +11,7 @@ terraform {
 }
 
 resource "proxmox_vm_qemu" "virtual_machine" {
-  count       = 1
+  count       = var.vm_counter
   name        = "${var.node_name}${count.index}"
   target_node = var.target_node
   vmid        = var.vmid

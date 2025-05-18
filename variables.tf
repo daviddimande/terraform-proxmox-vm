@@ -137,3 +137,8 @@ variable "link_down" {
   default     = false
   description = "define network interface status"
 }
+variable "nome" {
+  type        = string
+  description = "value"
+
+}

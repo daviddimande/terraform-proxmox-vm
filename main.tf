@@ -11,21 +11,21 @@ terraform {
 }
 
 resource "proxmox_vm_qemu" "virtual_machine" {
-  name        = "${var.node_name}"
+  name        = var.node_name
   target_node = var.target_node
   vmid        = var.vmid
-  desc        = "${var.node_name}"
-  bios       = var.bios
-  onboot     = var.onboot
-  vm_state   = var.vm_state
-  protection = var.protection
-  tablet     = var.tablet
-  boot       = var.boot
-  clone      = var.clone
-  full_clone = var.full_clone
-  memory     = var.memory
-  balloon    = var.balloon
-  hotplug    = var.hotplug
+  desc        = var.node_name
+  bios        = var.bios
+  onboot      = var.onboot
+  vm_state    = var.vm_state
+  protection  = var.protection
+  tablet      = var.tablet
+  boot        = var.boot
+  clone       = var.clone
+  full_clone  = var.full_clone
+  memory      = var.memory
+  balloon     = var.balloon
+  hotplug     = var.hotplug
 
   cpu {
     sockets = var.sockets

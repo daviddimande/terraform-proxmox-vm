@@ -138,7 +138,7 @@ variable "link_down" {
   description = "define network interface status"
 }
 
-variable "node_name" {
-  type = string
+variable "name" {
+  type        = string
   description = "node name"
 }

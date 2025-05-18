@@ -12,7 +12,7 @@ terraform {
 
 resource "proxmox_vm_qemu" "virtual_machine" {
   #name        = "${var.node_name}${var.vm_counter + 1}"
-  name        = var.node_name
+  #name        = var.node_name
   target_node = var.target_node
   vmid        = var.vmid
   #desc        = "${var.node_name}-${var.vm_counter.index + 1}"

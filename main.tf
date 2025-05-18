@@ -1,3 +1,15 @@
+terraform {
+  required_version = "~> 1.2"
+  required_providers {
+    proxmox = {
+      source  = "Telmate/proxmox"
+      version = "3.0.1-rc9"
+    }
+
+  }
+
+}
+
 resource "proxmox_vm_qemu" "virtual_machine" {
   count       = var.vm_counter
   name        = "${var.node_name}${count.index + 1}"

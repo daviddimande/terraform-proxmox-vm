@@ -1,32 +1,10 @@
-variable "pm_api_url" {
-  type    = string
-  default = "https://yourproxmoxhostehere:8006/api2/json"
-}
-
-variable "pm_api_token_id" {
-  type        = string
-  description = "token id for proxmox user"
-  sensitive   = true
-}
-
-variable "pm_api_token_secret" {
-  type        = string
-  description = "secret token for proxmox"
-  sensitive   = true
-}
-
-variable "pm_log_file" {
-  type        = string
-  default     = "terraform-plugin-proxmox.log"
-  description = "log file for terraform"
-}
 
 variable "target_node" {
   type        = string
   default     = "pve"
   description = "proxmox node where deployment will be done"
 }
-## ===================== VM variables ===================
+
 variable "vm_counter" {
   type        = number
   default     = 2

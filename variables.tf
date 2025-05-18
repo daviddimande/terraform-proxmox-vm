@@ -138,11 +138,11 @@ variable "link_down" {
   description = "define network interface status"
 }
 
+variable "counter" {
+  type = number
+}
 variable "name" {
   type        = string
   description = "node name"
 }
 
-variable "counter" {
-  type = number
-}

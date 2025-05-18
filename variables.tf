@@ -148,7 +148,5 @@ variable "vm_counter" {
 */
 variable "node_name" {
   type = string
-  #default     = "node-0"
   description = "node nome to be associated with resource"
 }
-

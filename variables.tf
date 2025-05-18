@@ -7,7 +7,7 @@ variable "target_node" {
 
 variable "vm_counter" {
   type        = number
-  default     = 2
+  #default     = 2
   description = "number of resources to be created"
 }
 variable "vmid" {

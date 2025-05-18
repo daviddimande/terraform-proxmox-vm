@@ -46,5 +46,4 @@ resource "proxmox_vm_qemu" "virtual_machine" {
     bridge    = var.network_bridge
     link_down = var.link_down
   }
-
 }

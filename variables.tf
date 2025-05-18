@@ -137,13 +137,8 @@ variable "link_down" {
   default     = false
   description = "define network interface status"
 }
+
 variable "node_name" {
-  type        = string
+  type = string
   description = "node name"
-
-}
-
-variable "counter" {
-  type = number
-description = "nodes quantity"
 }

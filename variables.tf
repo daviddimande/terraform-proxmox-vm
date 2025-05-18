@@ -137,16 +137,3 @@ variable "link_down" {
   default     = false
   description = "define network interface status"
 }
-
-/*
-
-variable "vm_counter" {
-  type        = number
-  #default     = 2
-  description = "number of resources to be created"
-}
-*/
-variable "node_name" {
-  type = string
-  description = "node nome to be associated with resource"
-}

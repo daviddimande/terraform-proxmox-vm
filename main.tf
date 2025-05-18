@@ -11,7 +11,6 @@ terraform {
 }
 
 resource "proxmox_vm_qemu" "virtual_machine" {
-  name        = var.node_name
   target_node = var.target_node
   vmid        = var.vmid
   bios        = var.bios

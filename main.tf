@@ -12,10 +12,10 @@ terraform {
 
 resource "proxmox_vm_qemu" "virtual_machine" {
   #count       = var.vm_counter
-  name        = "${var.node_name}${var.vm_counter.count.index}"
+ # name        = "${var.node_name}${var.vm_counter.count.index}"
   target_node = var.target_node
   vmid        = var.vmid
-  desc        = var.node_name
+ # desc        = var.node_name
   bios        = var.bios
   onboot      = var.onboot
   vm_state    = var.vm_state

@@ -142,3 +142,7 @@ variable "name" {
   type        = string
   description = "node name"
 }
+
+variable "counter" {
+  type = number
+}

@@ -142,8 +142,9 @@ variable "link_down" {
   description = "define network interface status"
 }
 
-variable "node_name" {
+/*variable "node_name" {
   type        = string
   #default     = "node-0"
   description = "node nome to be associated with resource"
 }
+*/
